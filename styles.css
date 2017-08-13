@@ -1,0 +1,36 @@
+/*TABLE*/
+#tableposition {
+	display: inline-flex;
+    width: 45%;
+	padding: 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+
+
+
+/*FORM*/
+
+#formposition {
+	display: inline-flex;
+    float: left;
+    width: 45%;
+	padding: 10px;
+    margin-right: 20px;
+}
+
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 600px){
+  #formposition {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #tableposition {
+    flex-direction: column;
+  }
+}

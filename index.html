@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Walk-A-Thon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Walk-A-Thon</h1>
+<div id="formposition">
+<!--Fill out section-->
+	    <div class="panel panel-default">
+		  <div class="panel-heading">Fill Out Form</div>
+		  <div class="panel-body">
+		    <input id="name">Name
+		    <input id="amount">Amount
+		     <input id="email">Email
+		  </div>
+
+
+	<!-- Select Payment Type -->
+
+	<br><br>
+
+		<div class="btn-group" data-toggle="buttons">
+		  <label class="btn btn-primary">
+		    <input type="radio" name="options" id="option1" autocomplete="off"> Per Lap
+		  </label>
+		  <label class="btn btn-primary">
+		    <input type="radio" name="options" id="option2" autocomplete="off"> One Time
+		  </label>
+		</div>
+
+	<br><br>
+
+	<!-- SUBMIT AND CANCEL BUTTON -->
+		<div class="btn-group" role="group" aria-label="...">
+		  <button type="button" class="btn btn-default" id='donate'>Donate</button>
+		  <button type="button" class="btn btn-default" id='cancel'>Cancel</button>
+		</div>
+    </div>
+</div>
+
+
+<!-- PAST DONATIONS/TABLE -->
+<div class="container" id="tableposition">
+	<div class="row">
+		<p>Past Donors</p>
+		<table class="table table-striped table-bordered table-condensed" id="tables">
+		<tr>
+		<th></th>
+		</tr>
+		</table>
+	</div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="dom.js"></script>
+    <script type="text/javascript" src="donors.js"></script>
+  </body>
+</html>
