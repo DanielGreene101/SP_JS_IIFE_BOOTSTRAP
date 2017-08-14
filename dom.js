@@ -1,3 +1,4 @@
+
 console.log('dom.js works');
 //INPUT INFO//
 let name = document.getElementById('name');
@@ -15,13 +16,19 @@ let table = document.getElementById('tables');
 //ADD NEW DONORS TO DOM//
 function printDonors() {
     let newdonor = donorList.getDonors();
-    let info = "";
+    console.log(donorList.getDonors());
+    var info = "";
     for(let i = 0; i < newdonor.length; i++){
-        info.innerHTML += 
-            `<tr><td>${newdonor[i].name} + ${newdonor[i].email} + ${newdonor[i].amount}</td></tr>`;
-    }
-    table.innerHTML += info;
+        info += `<p>${newdonor[i].name} ${newdonor[i].email} ${newdonor[i].amount}</p>`;
+        if (perLap === true){
+            info += `<p>PerLap</p>`
+        }else{
+            info += `<p>Single Payment</p>`
+        };
+    };
+    table.innerHTML = info;
 };
+printDonors();
 
 //HANDLE DONATE BUTTON//
 donBtn.addEventListener('click', function (){
@@ -32,8 +39,16 @@ donBtn.addEventListener('click', function (){
         perLap.checked,
         email.value
     );
-    console.log('They be printing');
+
 });
+//PERLAP AND ONE TIME PAYMENT BUTTONS//
+perLap.addEventListener('click', function(){
+    perLap === true;
+});
+once.addEventListener('click', function(){
+    perLap === false;
+});
+
 
 //CANCEL BUTTON//
 cnclBtn.addEventListener('click', function (){
@@ -42,4 +57,3 @@ cnclBtn.addEventListener('click', function (){
     amount.value = '';
     console.log('cleared');
 });
-
